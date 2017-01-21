@@ -10,6 +10,11 @@
 		73BF9C151E33C22C00577C30 /* IBAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C0B1E33C22C00577C30 /* IBAN.framework */; };
 		73BF9C1A1E33C22C00577C30 /* IBANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C191E33C22C00577C30 /* IBANTests.swift */; };
 		73BF9C1C1E33C22C00577C30 /* IBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BF9C0E1E33C22C00577C30 /* IBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73BF9C261E33C2E100577C30 /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C251E33C2E100577C30 /* IBAN.swift */; };
+		73BF9C291E33CB2F00577C30 /* Hamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C281E33CB2F00577C30 /* Hamcrest.framework */; };
+		73BF9C2B1E33CB4100577C30 /* Hamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73BF9C281E33CB2F00577C30 /* Hamcrest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		73BF9C2D1E33CB5900577C30 /* ISO3166_1Alpha2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; };
+		73BF9C2F1E33CB6D00577C30 /* ISO3166_1Alpha2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +27,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		73BF9C2A1E33CB3600577C30 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				73BF9C2B1E33CB4100577C30 /* Hamcrest.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BF9C2E1E33CB6400577C30 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				73BF9C2F1E33CB6D00577C30 /* ISO3166_1Alpha2.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		73BF9C0B1E33C22C00577C30 /* IBAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BF9C0E1E33C22C00577C30 /* IBAN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBAN.h; sourceTree = "<group>"; };
@@ -29,6 +57,9 @@
 		73BF9C141E33C22C00577C30 /* IBANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BF9C191E33C22C00577C30 /* IBANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBANTests.swift; sourceTree = "<group>"; };
 		73BF9C1B1E33C22C00577C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73BF9C251E33C2E100577C30 /* IBAN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
+		73BF9C281E33CB2F00577C30 /* Hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hamcrest.framework; path = Carthage/Build/iOS/Hamcrest.framework; sourceTree = "<group>"; };
+		73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO3166_1Alpha2.framework; path = Carthage/Build/iOS/ISO3166_1Alpha2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BF9C2D1E33CB5900577C30 /* ISO3166_1Alpha2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BF9C291E33CB2F00577C30 /* Hamcrest.framework in Frameworks */,
 				73BF9C151E33C22C00577C30 /* IBAN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,9 +86,10 @@
 		73BF9C011E33C22C00577C30 = {
 			isa = PBXGroup;
 			children = (
-				73BF9C0D1E33C22C00577C30 /* IBAN */,
+				73BF9C0D1E33C22C00577C30 /* Sources */,
 				73BF9C181E33C22C00577C30 /* IBANTests */,
 				73BF9C0C1E33C22C00577C30 /* Products */,
+				73BF9C271E33CB2F00577C30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,13 +102,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		73BF9C0D1E33C22C00577C30 /* IBAN */ = {
+		73BF9C0D1E33C22C00577C30 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				73BF9C0E1E33C22C00577C30 /* IBAN.h */,
 				73BF9C0F1E33C22C00577C30 /* Info.plist */,
+				73BF9C251E33C2E100577C30 /* IBAN.swift */,
 			);
-			path = IBAN;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		73BF9C181E33C22C00577C30 /* IBANTests */ = {
@@ -84,6 +119,15 @@
 				73BF9C1B1E33C22C00577C30 /* Info.plist */,
 			);
 			path = IBANTests;
+			sourceTree = "<group>";
+		};
+		73BF9C271E33CB2F00577C30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */,
+				73BF9C281E33CB2F00577C30 /* Hamcrest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +152,7 @@
 				73BF9C071E33C22C00577C30 /* Frameworks */,
 				73BF9C081E33C22C00577C30 /* Headers */,
 				73BF9C091E33C22C00577C30 /* Resources */,
+				73BF9C2E1E33CB6400577C30 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -125,6 +170,7 @@
 				73BF9C101E33C22C00577C30 /* Sources */,
 				73BF9C111E33C22C00577C30 /* Frameworks */,
 				73BF9C121E33C22C00577C30 /* Resources */,
+				73BF9C2A1E33CB3600577C30 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -148,6 +194,7 @@
 				TargetAttributes = {
 					73BF9C0A1E33C22C00577C30 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					73BF9C131E33C22C00577C30 = {
@@ -196,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BF9C261E33C2E100577C30 /* IBAN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -306,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -320,17 +368,23 @@
 		73BF9C201E33C22C00577C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = IBAN/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,12 +392,17 @@
 		73BF9C211E33C22C00577C30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = IBAN/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBAN;
@@ -356,6 +415,11 @@
 		73BF9C231E33C22C00577C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = IBANTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBANTests;
@@ -367,6 +431,11 @@
 		73BF9C241E33C22C00577C30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = IBANTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBANTests;
@@ -394,6 +463,7 @@
 				73BF9C211E33C22C00577C30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73BF9C221E33C22C00577C30 /* Build configuration list for PBXNativeTarget "IBANTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +472,7 @@
 				73BF9C241E33C22C00577C30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

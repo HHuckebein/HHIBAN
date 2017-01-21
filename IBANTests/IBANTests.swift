@@ -7,10 +7,15 @@
 //
 
 import XCTest
+import Hamcrest
 @testable import IBAN
 
 class IBANTests: XCTestCase {
     
+    let correctFormattedGermanIBAN         = "DE08700901001234567890"
+    let correctFormattedInternationalIBAN  = "AL47212110090000000235698741"
+    let correctFormattedCH                 = "CH10002300A1023502601"
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,17 +25,10 @@ class IBANTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func test_IBAN_CorrectFormat() {
+        assertThat(try IBAN(withIBAN: correctFormattedGermanIBAN), not(nilValue()))
+        assertThat(try IBAN(withIBAN: correctFormattedInternationalIBAN), not(nilValue()))
+        assertThat(try IBAN(withIBAN: correctFormattedCH), not(nilValue()))
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
