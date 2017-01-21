@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73BF9C151E33C22C00577C30 /* IBAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C0B1E33C22C00577C30 /* IBAN.framework */; };
+		73BF9C1A1E33C22C00577C30 /* IBANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C191E33C22C00577C30 /* IBANTests.swift */; };
+		73BF9C1C1E33C22C00577C30 /* IBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BF9C0E1E33C22C00577C30 /* IBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73BF9C161E33C22C00577C30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73BF9C021E33C22C00577C30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73BF9C0A1E33C22C00577C30;
+			remoteInfo = IBAN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		73BF9C0B1E33C22C00577C30 /* IBAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BF9C0E1E33C22C00577C30 /* IBAN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBAN.h; sourceTree = "<group>"; };
+		73BF9C0F1E33C22C00577C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73BF9C141E33C22C00577C30 /* IBANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BF9C191E33C22C00577C30 /* IBANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBANTests.swift; sourceTree = "<group>"; };
+		73BF9C1B1E33C22C00577C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73BF9C071E33C22C00577C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BF9C111E33C22C00577C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BF9C151E33C22C00577C30 /* IBAN.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73BF9C011E33C22C00577C30 = {
+			isa = PBXGroup;
+			children = (
+				73BF9C0D1E33C22C00577C30 /* IBAN */,
+				73BF9C181E33C22C00577C30 /* IBANTests */,
+				73BF9C0C1E33C22C00577C30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73BF9C0C1E33C22C00577C30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73BF9C0B1E33C22C00577C30 /* IBAN.framework */,
+				73BF9C141E33C22C00577C30 /* IBANTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73BF9C0D1E33C22C00577C30 /* IBAN */ = {
+			isa = PBXGroup;
+			children = (
+				73BF9C0E1E33C22C00577C30 /* IBAN.h */,
+				73BF9C0F1E33C22C00577C30 /* Info.plist */,
+			);
+			path = IBAN;
+			sourceTree = "<group>";
+		};
+		73BF9C181E33C22C00577C30 /* IBANTests */ = {
+			isa = PBXGroup;
+			children = (
+				73BF9C191E33C22C00577C30 /* IBANTests.swift */,
+				73BF9C1B1E33C22C00577C30 /* Info.plist */,
+			);
+			path = IBANTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73BF9C081E33C22C00577C30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BF9C1C1E33C22C00577C30 /* IBAN.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		73BF9C0A1E33C22C00577C30 /* IBAN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73BF9C1F1E33C22C00577C30 /* Build configuration list for PBXNativeTarget "IBAN" */;
+			buildPhases = (
+				73BF9C061E33C22C00577C30 /* Sources */,
+				73BF9C071E33C22C00577C30 /* Frameworks */,
+				73BF9C081E33C22C00577C30 /* Headers */,
+				73BF9C091E33C22C00577C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBAN;
+			productName = IBAN;
+			productReference = 73BF9C0B1E33C22C00577C30 /* IBAN.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73BF9C131E33C22C00577C30 /* IBANTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73BF9C221E33C22C00577C30 /* Build configuration list for PBXNativeTarget "IBANTests" */;
+			buildPhases = (
+				73BF9C101E33C22C00577C30 /* Sources */,
+				73BF9C111E33C22C00577C30 /* Frameworks */,
+				73BF9C121E33C22C00577C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73BF9C171E33C22C00577C30 /* PBXTargetDependency */,
+			);
+			name = IBANTests;
+			productName = IBANTests;
+			productReference = 73BF9C141E33C22C00577C30 /* IBANTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73BF9C021E33C22C00577C30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "RABE_IT Services";
+				TargetAttributes = {
+					73BF9C0A1E33C22C00577C30 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					73BF9C131E33C22C00577C30 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 73BF9C051E33C22C00577C30 /* Build configuration list for PBXProject "IBAN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 73BF9C011E33C22C00577C30;
+			productRefGroup = 73BF9C0C1E33C22C00577C30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73BF9C0A1E33C22C00577C30 /* IBAN */,
+				73BF9C131E33C22C00577C30 /* IBANTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73BF9C091E33C22C00577C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BF9C121E33C22C00577C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73BF9C061E33C22C00577C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BF9C101E33C22C00577C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BF9C1A1E33C22C00577C30 /* IBANTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73BF9C171E33C22C00577C30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73BF9C0A1E33C22C00577C30 /* IBAN */;
+			targetProxy = 73BF9C161E33C22C00577C30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		73BF9C1D1E33C22C00577C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73BF9C1E1E33C22C00577C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73BF9C201E33C22C00577C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IBAN/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBAN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		73BF9C211E33C22C00577C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IBAN/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBAN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		73BF9C231E33C22C00577C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IBANTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBANTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		73BF9C241E33C22C00577C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IBANTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBANTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73BF9C051E33C22C00577C30 /* Build configuration list for PBXProject "IBAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BF9C1D1E33C22C00577C30 /* Debug */,
+				73BF9C1E1E33C22C00577C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73BF9C1F1E33C22C00577C30 /* Build configuration list for PBXNativeTarget "IBAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BF9C201E33C22C00577C30 /* Debug */,
+				73BF9C211E33C22C00577C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		73BF9C221E33C22C00577C30 /* Build configuration list for PBXNativeTarget "IBANTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BF9C231E33C22C00577C30 /* Debug */,
+				73BF9C241E33C22C00577C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73BF9C021E33C22C00577C30 /* Project object */;
+}
