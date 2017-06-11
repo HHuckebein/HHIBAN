@@ -1,0 +1,35 @@
+language: objective-c
+osx_image: xcode8.3
+env:
+  global:
+  - PROJECT="IBAN.xcodeproj"
+  - IOS_SCHEME="IBAN"
+  - IOS_SDK=iphonesimulator10.3
+  matrix:
+  - DESTINATION="OS=10.0,name=iPhone 6s" SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES"
+  - DESTINATION="OS=10.1,name=iPhone 7"  SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES"
+
+notifications:
+  slack:
+    rooms:
+      secure: we/+a5s+vpdBEfvi4nhJOvZr6shSEpjai6HEG7/E5k9DfsRiz9Ws5ixkbz4Z7Hsr4ldtp1BxhCSgnhPdQ5umRXiD8KkXl7L1PjK1u7mQxq42XJ2O1tIhz6gAWytqSQhQ4TJ/UU2VNFIOd+wCeXC1S0PjI6xSYMXd2h2mQ0g5GoFN1qrxrdtonT9K+dMrkzj0WcWPJzzoR9VQf+PDIryUyEFkMt6FA5/NhDJ56kmQwv4LPezguEP6vIHD2rjStSKIxE5ignuY96kyGoz2gNgNcms2mz5QhstMIewMLmmZ8Mjt6haz7Mr3FP/EsBqsPYrtLNPJgyrqSzWIDo4r9FtXlqo7k/QAd3sR+S6A4e6cvyFYoYKp37aTvFK7m0GyEmNd7zpuuBsHDDCRQTPI0UlgAtxT8GPOkBXxqmnhxzAUunE5qCCppbDpeyPW9KNoRqfshPyWNluezOsr+TALKBTKT/jtdnr+gXhxdAAB8ztpBStX2lWzJgstFpxhrj3kW22EGJSTVWJh0SLvhtzKVEvIyC26ndhEEUTeuUcKm1W67Xnk25S6tPlmqZfmIkULH9AF/P8YmRNFHIKls2OEJwfo9wfQ2CO9yOYvlMBQvCaVgByJ0DhCNxfraxuSkcfr6BJv1I2R7MQX+wyDqkF2y5LY8Av8RNjj1Xrx7bmlfusoFaE=
+
+before_install:
+- brew install carthage || brew outdated carthage || brew upgrade carthage
+
+install:
+- carthage bootstrap
+
+script:
+- set -o pipefail
+- if [ $RUN_TESTS == "YES" ]; then xcodebuild analyze test -project "$PROJECT" -scheme
+  "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO
+  CODE_SIGNING_REQUIRED=NO | xcpretty -c; else xcodebuild build analyze -project "$PROJECT"
+  -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO
+  CODE_SIGNING_REQUIRED=NO | xcpretty -c; fi
+- if [ $RUN_TESTS == "YES" ]; then xcodebuild test -project IBAN.xcodeproj -scheme
+  IBAN -destination "platform=iOS Simulator,name=iPhone 7" CODE_SIGNING_REQUIRED=NO
+  | xcpretty -c; fi
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
