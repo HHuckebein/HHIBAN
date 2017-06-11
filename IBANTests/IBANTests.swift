@@ -68,4 +68,13 @@ class IBANTests: XCTestCase {
         assertThrows(try IBAN(with: ""), IBANCreation.invalidCharacters)
     }
 
+    func test_isIBAN() {
+        assertThat(correctFormattedGermanIBAN.isIBAN, equalTo(true))
+        assertThat(correctFormattedInternationalIBAN.isIBAN, equalTo(true))
+        assertThat(correctFormattedCH.isIBAN, equalTo(true))
+        assertThat("CH10002300A%023502601".isIBAN, equalTo(false))
+        assertThat("XX47212110090000000235698741".isIBAN, equalTo(false))
+        assertThat("CH1Z002300A1023502601".isIBAN, equalTo(false))
+        assertThat("".isIBAN, equalTo(false))
+    }
 }

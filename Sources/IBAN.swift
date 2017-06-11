@@ -24,6 +24,16 @@ import ISO3166_1Alpha2
  Banking Account Number, consisting of BLZ and KTO, of 30.
  */
 
+public extension String {
+    public var isIBAN: Bool {
+        do {
+            return try IBAN(with: self) != nil
+        } catch {
+            return false
+        }
+    }
+}
+
 enum IBANCreation: Error {
     case invalidCharacters
     case wrongCountryCode
