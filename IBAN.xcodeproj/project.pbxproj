@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73A032B61E34E6C6007F889F /* ISO3166_1Alpha2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; };
+		73A032B71E34E6CC007F889F /* ISO3166_1Alpha2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		73BF9C151E33C22C00577C30 /* IBAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C0B1E33C22C00577C30 /* IBAN.framework */; };
 		73BF9C1A1E33C22C00577C30 /* IBANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C191E33C22C00577C30 /* IBANTests.swift */; };
 		73BF9C1C1E33C22C00577C30 /* IBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BF9C0E1E33C22C00577C30 /* IBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +37,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				73BF9C2B1E33CB4100577C30 /* Hamcrest.framework in CopyFiles */,
+				73A032B71E34E6CC007F889F /* ISO3166_1Alpha2.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 			files = (
 				73BF9C291E33CB2F00577C30 /* Hamcrest.framework in Frameworks */,
 				73BF9C151E33C22C00577C30 /* IBAN.framework in Frameworks */,
+				73A032B61E34E6C6007F889F /* ISO3166_1Alpha2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -354,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

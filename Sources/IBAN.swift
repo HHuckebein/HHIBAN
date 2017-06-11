@@ -24,18 +24,14 @@ import ISO3166_1Alpha2
  Banking Account Number, consisting of BLZ and KTO, of 30.
  */
 
-public extension String {
-    public var isIBAN: Bool {
-        return true
-    }
-}
-
 enum IBANCreation: Error {
     case invalidCharacters
     case wrongCountryCode
     case invalidLength
     case invalidChecksum
+    case wrongFormat
 }
+
 public struct IBAN {
     struct Constants {
         static let lengthDE    = 22
@@ -50,26 +46,24 @@ public struct IBAN {
     let value: String
     let country: ISO3166_1Alpha2
     
-    init?(withIBAN iban: String) throws {
+    init?(with iban: String) throws {
         if iban.isValidCharacterSet == false {
             throw IBANCreation.invalidCharacters
         }
         
         // Country Code check
         guard let countryCodeRange = iban.convertRange(range: Constants.countryCodeRange) else  {
-            throw IBANCreation.wrongCountryCode
+            print("range convertion failed")
+            return nil
         }
         
         let countryCodeString = iban.substring(with: countryCodeRange)
-        if countryCodeString.isISO3166_1Alpha2 == false {
-            throw IBANCreation.wrongCountryCode
-        }
-        
         guard let country = ISO3166_1Alpha2(value: countryCodeString) else {
             throw IBANCreation.wrongCountryCode
         }
         
         // Length check
+        
         let count = iban.characters.count
         if country == .de, count > Constants.lengthDE {
             throw IBANCreation.invalidLength
@@ -85,11 +79,13 @@ public struct IBAN {
         
         // Checksum check
         
-        guard
-            let checkSumRange = iban.convertRange(range: Constants.checkSumRange),
-            let sum = Int(iban.substring(with: checkSumRange))
-        else  {
-            throw IBANCreation.invalidChecksum
+        guard let checkSumRange = iban.convertRange(range: Constants.checkSumRange) else  {
+            print("range convertion failed")
+            return nil
+        }
+
+        guard let sum = Int(iban.substring(with: checkSumRange)) else  {
+            throw IBANCreation.wrongFormat
         }
         
         IBAN.checkSum = sum
@@ -105,10 +101,11 @@ public struct IBAN {
             throw IBANCreation.invalidChecksum
         }
         transformedIBAN = uppercasedNoSpaces
-        // 3. transform: map A..Z to 10..35
-        transformedIBAN = transformedIBAN.characters.map({ $0.transformed }).reduce("", { $0 + $1 })
         
-        if transformedIBAN.isModulo9710String == false {
+        // 3. transform: map A..Z to 10..35
+        transformedIBAN = transformedIBAN.characters.map({ $0.transformed }).reduce("", { $0 + $1 }) + "00"
+        
+        if transformedIBAN.isModulo9710 == false {
             throw IBANCreation.invalidChecksum
         }
         
@@ -116,6 +113,20 @@ public struct IBAN {
         self.value = iban
     }
 }
+
+extension IBAN: CustomStringConvertible {
+    public var description: String {
+        let count = value.characters.count / 4
+        var formatted = value
+        for index in (0..<count).reversed() {
+            let insertIdx = formatted.index(formatted.startIndex, offsetBy: (index + 1) * 4)
+            formatted.insert(" ", at: insertIdx)
+        }
+        return formatted
+    }
+}
+
+// MARK: - Helper Functions
 
 fileprivate extension StringTransform {
     static let toUppercaseNoSpaces = StringTransform(rawValue: "Upper; [:Separator:] Remove;")
@@ -125,9 +136,14 @@ fileprivate extension Character {
     /** Maps
     */
     var transformed: String {
-        let base = ("A" as NSString).character(at: 0)
-        let own = (String(self) as NSString).character(at: 0)
-        return String(own - base + 10)
+        if "A"..."Z" ~= String(self) {
+            let base = ("A" as NSString).character(at: 0)
+            let own = (String(self) as NSString).character(at: 0)
+
+            return String(own - base + 10)
+        } else {
+            return String(self)
+        }
     }
 }
 
@@ -137,16 +153,18 @@ fileprivate extension String {
         return pred.evaluate(with: self)
     }
     
-    var isModulo9710String: Bool {
-        if self.characters.count > 0 {
-            let index = self.index(self.startIndex, offsetBy: 9)
-            guard var number = Int(self.substring(to: index)) else {
+    var isModulo9710: Bool {
+        if characters.count >= 9 {
+            let idx = index(startIndex, offsetBy: 9)
+            
+            guard var number = Int(substring(to: idx)) else {
                 return false
             }
             number %= 97
-            let newString = String(number) + self.substring(from: index)
-            return newString.isModulo9710String
+            let newString = String(number) + substring(from: idx)
+            return newString.isModulo9710
         }
+        
         guard let number = Int(self) else {
             return false
         }
@@ -158,7 +176,7 @@ fileprivate extension String {
     func convertRange(range: Range<Int>) -> Range<String.Index>? {
         guard
             let startIdx = index(startIndex, offsetBy: range.lowerBound, limitedBy: endIndex),
-            let endIdx = index(startIndex, offsetBy: range.upperBound - range.lowerBound, limitedBy: endIndex)
+            let endIdx = index(startIndex, offsetBy: range.upperBound, limitedBy: endIndex)
             else {
                 print("Getting String.Index out of \(range) failed")
                 return nil
