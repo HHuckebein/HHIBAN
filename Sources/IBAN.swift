@@ -67,14 +67,14 @@ public struct IBAN {
             return nil
         }
         
-        let countryCodeString = iban.substring(with: countryCodeRange)
+        let countryCodeString = String(iban[countryCodeRange])
         guard let country = ISO3166_1Alpha2(value: countryCodeString) else {
             throw IBANCreation.wrongCountryCode
         }
         
         // Length check
         
-        let count = iban.characters.count
+        let count = iban.count
         if country == .de, count > Constants.lengthDE {
             throw IBANCreation.invalidLength
         }
@@ -94,7 +94,7 @@ public struct IBAN {
             return nil
         }
 
-        guard let sum = Int(iban.substring(with: checkSumRange)) else  {
+        guard let sum = Int(iban[checkSumRange]) else  {
             throw IBANCreation.wrongFormat
         }
         
@@ -105,7 +105,7 @@ public struct IBAN {
         // the prepare for checksum calculation
         
         // 1. the final string without checksum
-        var transformedIBAN = iban.substring(from: checkSumRange.upperBound) + iban.substring(with: countryCodeRange)
+        var transformedIBAN = String(iban[checkSumRange.upperBound...] + iban[countryCodeRange])
         // 2. uppercase without spaces
         guard let uppercasedNoSpaces = transformedIBAN.applyingTransform(.toUppercaseNoSpaces, reverse: false) else {
             throw IBANCreation.invalidChecksum
@@ -113,7 +113,7 @@ public struct IBAN {
         transformedIBAN = uppercasedNoSpaces
         
         // 3. transform: map A..Z to 10..35
-        transformedIBAN = transformedIBAN.characters.map({ $0.transformed }).reduce("", { $0 + $1 }) + "00"
+        transformedIBAN = transformedIBAN.map({ $0.transformed }).reduce("", { $0 + $1 }) + "00"
         
         if transformedIBAN.isModulo9710 == false {
             throw IBANCreation.invalidChecksum
@@ -126,7 +126,7 @@ public struct IBAN {
 
 extension IBAN: CustomStringConvertible {
     public var description: String {
-        let count = value.characters.count / 4
+        let count = value.count / 4
         var formatted = value
         for index in (0..<count).reversed() {
             let insertIdx = formatted.index(formatted.startIndex, offsetBy: (index + 1) * 4)
@@ -164,14 +164,16 @@ fileprivate extension String {
     }
     
     var isModulo9710: Bool {
-        if characters.count >= 9 {
-            let idx = index(startIndex, offsetBy: 9)
-            
-            guard var number = Int(substring(to: idx)) else {
+        if count >= 9 {
+            guard
+                let idx = index(startIndex, offsetBy: 9, limitedBy: endIndex),
+                var number = Int(self[..<idx])
+            else {
                 return false
             }
+
             number %= 97
-            let newString = String(number) + substring(from: idx)
+            let newString = String(number) + self[idx...]
             return newString.isModulo9710
         }
         
