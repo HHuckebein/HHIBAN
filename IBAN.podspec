@@ -16,5 +16,5 @@ Create an IBAN out of a string (if it is a valid IBAN). If successful provides i
 
   s.source_files = 'Sources/**/*.swift'
   s.swift_version = '4.1'
-  s.dependency 'ISO3166-1Alpha2'
+  s.dependency 'ISO3166_1Alpha2'
 end
