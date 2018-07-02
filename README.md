@@ -7,6 +7,7 @@ If you just need to know wether a string contains a valid IBAN you can user mySt
 
 [![Build Status](https://travis-ci.org/HHuckebein/IBAN.svg?branch=master)](https://travis-ci.org/HHuckebein/IBAN)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods](https://img.shields.io/cocoapods/v/HHIBAN.svg)]
 [![codecov](https://codecov.io/gh/HHuckebein/IBAN/branch/master/graph/badge.svg)](https://codecov.io/gh/HHuckebein/IBAN)
 
 ## How to use IBAN
