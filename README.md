@@ -40,6 +40,13 @@ github "HHuckebein/IBAN"
 
 Run `carthage` to build the framework and drag the built `IBAN.framework` into your Xcode project.
 
+### Installation with CocoaPods
+
+You can install IBAN by including the following line in your Podfile.
+
+```Ruby
+pod 'HHIBAN', '~> 0.1.0'
+```
 
 ## Author
 
