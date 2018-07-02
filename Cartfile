@@ -1,2 +1,2 @@
-github "https://github.com/nschum/SwiftHamcrest.git" "master"
-github "https://github.com/hhuckebein/ISO3166-1-Alpha2.git" "master"
+github "nschum/SwiftHamcrest" ~> 2.0.0
+github "hhuckebein/ISO3166-1-Alpha2" ~> 0.1.0
