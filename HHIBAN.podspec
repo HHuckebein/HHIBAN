@@ -12,7 +12,7 @@ Create an IBAN out of a string (if it is a valid IBAN). If successful provides i
   s.author           = { 'HHuckebein' => 'development@berndrabe.de' }
   s.source           = { :git => 'https://github.com/HHuckebein/IBAN.git', :tag => s.version.to_s }
  
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Sources/**/*.swift'
   s.swift_version = '4.1'

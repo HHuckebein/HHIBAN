@@ -63,6 +63,9 @@
 		73BF9C251E33C2E100577C30 /* IBAN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
 		73BF9C281E33CB2F00577C30 /* Hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hamcrest.framework; path = Carthage/Build/iOS/Hamcrest.framework; sourceTree = "<group>"; };
 		73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO3166_1Alpha2.framework; path = Carthage/Build/iOS/ISO3166_1Alpha2.framework; sourceTree = "<group>"; };
+		DC25834B20EB85280062C6D3 /* HHIBAN.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HHIBAN.podspec; sourceTree = "<group>"; };
+		DC25834C20EB85280062C6D3 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		DC25834D20EB85280062C6D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,9 @@
 		73BF9C011E33C22C00577C30 = {
 			isa = PBXGroup;
 			children = (
+				DC25834C20EB85280062C6D3 /* Cartfile */,
+				DC25834B20EB85280062C6D3 /* HHIBAN.podspec */,
+				DC25834D20EB85280062C6D3 /* README.md */,
 				73BF9C0D1E33C22C00577C30 /* Sources */,
 				73BF9C181E33C22C00577C30 /* IBANTests */,
 				73BF9C0C1E33C22C00577C30 /* Products */,
