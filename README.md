@@ -1,9 +1,9 @@
 # IBAN
 What is IBAN for?
 -------------------
-IBAN Type creates an IBAN out of string. The failable initializer throws an error which helps in identifying where the problems lies.
-In success case provides information as county (as **ISO3166-1Alpha2**) the check sum or just the value as string.
-If you just need to know wether a string contains a valid IBAN you can user myString**.isIBAN**.
+IBAN Type creates an IBAN out of string (if it is IBAN conform).
+In case of success provides information as counrty (as **ISO3166-1Alpha2**) the check sum or just the value as formatted string.
+If you just need to know wether a string contains a valid IBAN you can use the static method myString**.isIBAN**.
 
 [![Build Status](https://travis-ci.org/HHuckebein/IBAN.svg?branch=master)](https://travis-ci.org/HHuckebein/IBAN)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
