@@ -193,6 +193,6 @@ fileprivate extension String {
                 print("Getting String.Index out of \(range) failed")
                 return nil
         }
-        return Range<String.Index>(startIdx..<endIdx)
+        return startIdx..<endIdx
     }
 }

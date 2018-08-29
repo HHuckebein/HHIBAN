@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'HHIBAN'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Create and validate IBAN.'
 
   s.description      = <<-DESC
-Create an IBAN out of a string (if it is a valid IBAN). If successful provides information as country (as ISO3166-1Alpha2) the check sum or just the value as formatted string. If you just need to know wether a string contains a valid IBAN you can user myString.isIBAN.
+Create an IBAN out of a string (if it is a valid IBAN). If successful provides information as country (as ISO3166-1Alpha2) the check sum or just the value as formatted string. If you just need to know wether a string contains a valid IBAN you can use myString.isIBAN.
                        DESC
 
   s.homepage         = 'https://github.com/HHuckebein/IBAN'
