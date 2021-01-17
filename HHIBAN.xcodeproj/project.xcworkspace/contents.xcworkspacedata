@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:IBAN.xcodeproj">
+      location = "self:/Users/bernd/Documents/iPhoneDev/Projects/Public/IBAN/HHIBAN.xcodeproj">
    </FileRef>
 </Workspace>

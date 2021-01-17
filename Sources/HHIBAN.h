@@ -1,6 +1,6 @@
 //
-//  IBAN.h
-//  IBAN
+//  HHIBAN.h
+//  HHIBAN
 //
 //  Created by Bernd Rabe on 21.01.17.
 //  Copyright © 2017 RABE_IT Services. All rights reserved.

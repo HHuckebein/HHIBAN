@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73A032B61E34E6C6007F889F /* ISO3166_1Alpha2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; };
-		73A032B71E34E6CC007F889F /* ISO3166_1Alpha2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		73BF9C151E33C22C00577C30 /* IBAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C0B1E33C22C00577C30 /* IBAN.framework */; };
-		73BF9C1A1E33C22C00577C30 /* IBANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C191E33C22C00577C30 /* IBANTests.swift */; };
-		73BF9C1C1E33C22C00577C30 /* IBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BF9C0E1E33C22C00577C30 /* IBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73BF9C261E33C2E100577C30 /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C251E33C2E100577C30 /* IBAN.swift */; };
-		73BF9C291E33CB2F00577C30 /* Hamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C281E33CB2F00577C30 /* Hamcrest.framework */; };
-		73BF9C2B1E33CB4100577C30 /* Hamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73BF9C281E33CB2F00577C30 /* Hamcrest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		73BF9C1A1E33C22C00577C30 /* HHIBANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C191E33C22C00577C30 /* HHIBANTests.swift */; };
+		73BF9C1C1E33C22C00577C30 /* HHIBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BF9C0E1E33C22C00577C30 /* HHIBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73BF9C261E33C2E100577C30 /* HHIBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C251E33C2E100577C30 /* HHIBAN.swift */; };
 		73BF9C2D1E33CB5900577C30 /* ISO3166_1Alpha2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; };
-		73BF9C2F1E33CB6D00577C30 /* ISO3166_1Alpha2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		73C3134F25B43020001DE1A0 /* HHIBAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C0B1E33C22C00577C30 /* HHIBAN.framework */; };
+		73C3135225B4302D001DE1A0 /* ISO3166_1Alpha2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,39 +25,14 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		73BF9C2A1E33CB3600577C30 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				73BF9C2B1E33CB4100577C30 /* Hamcrest.framework in CopyFiles */,
-				73A032B71E34E6CC007F889F /* ISO3166_1Alpha2.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		73BF9C2E1E33CB6400577C30 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				73BF9C2F1E33CB6D00577C30 /* ISO3166_1Alpha2.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		73BF9C0B1E33C22C00577C30 /* IBAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73BF9C0E1E33C22C00577C30 /* IBAN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBAN.h; sourceTree = "<group>"; };
+		73BF9C0B1E33C22C00577C30 /* HHIBAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HHIBAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BF9C0E1E33C22C00577C30 /* HHIBAN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHIBAN.h; sourceTree = "<group>"; };
 		73BF9C0F1E33C22C00577C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73BF9C141E33C22C00577C30 /* IBANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		73BF9C191E33C22C00577C30 /* IBANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBANTests.swift; sourceTree = "<group>"; };
+		73BF9C141E33C22C00577C30 /* HHIBANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHIBANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BF9C191E33C22C00577C30 /* HHIBANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHIBANTests.swift; sourceTree = "<group>"; };
 		73BF9C1B1E33C22C00577C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73BF9C251E33C2E100577C30 /* IBAN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
-		73BF9C281E33CB2F00577C30 /* Hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hamcrest.framework; path = Carthage/Build/iOS/Hamcrest.framework; sourceTree = "<group>"; };
+		73BF9C251E33C2E100577C30 /* HHIBAN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHIBAN.swift; sourceTree = "<group>"; };
 		73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO3166_1Alpha2.framework; path = Carthage/Build/iOS/ISO3166_1Alpha2.framework; sourceTree = "<group>"; };
 		DC25834B20EB85280062C6D3 /* HHIBAN.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HHIBAN.podspec; sourceTree = "<group>"; };
 		DC25834C20EB85280062C6D3 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
@@ -81,9 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BF9C291E33CB2F00577C30 /* Hamcrest.framework in Frameworks */,
-				73BF9C151E33C22C00577C30 /* IBAN.framework in Frameworks */,
-				73A032B61E34E6C6007F889F /* ISO3166_1Alpha2.framework in Frameworks */,
+				73C3134F25B43020001DE1A0 /* HHIBAN.framework in Frameworks */,
+				73C3135225B4302D001DE1A0 /* ISO3166_1Alpha2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +67,7 @@
 				DC25834B20EB85280062C6D3 /* HHIBAN.podspec */,
 				DC25834D20EB85280062C6D3 /* README.md */,
 				73BF9C0D1E33C22C00577C30 /* Sources */,
-				73BF9C181E33C22C00577C30 /* IBANTests */,
+				73BF9C181E33C22C00577C30 /* HHIBANTests */,
 				73BF9C0C1E33C22C00577C30 /* Products */,
 				73BF9C271E33CB2F00577C30 /* Frameworks */,
 			);
@@ -106,8 +76,8 @@
 		73BF9C0C1E33C22C00577C30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73BF9C0B1E33C22C00577C30 /* IBAN.framework */,
-				73BF9C141E33C22C00577C30 /* IBANTests.xctest */,
+				73BF9C0B1E33C22C00577C30 /* HHIBAN.framework */,
+				73BF9C141E33C22C00577C30 /* HHIBANTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,27 +85,26 @@
 		73BF9C0D1E33C22C00577C30 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				73BF9C0E1E33C22C00577C30 /* IBAN.h */,
+				73BF9C0E1E33C22C00577C30 /* HHIBAN.h */,
 				73BF9C0F1E33C22C00577C30 /* Info.plist */,
-				73BF9C251E33C2E100577C30 /* IBAN.swift */,
+				73BF9C251E33C2E100577C30 /* HHIBAN.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		73BF9C181E33C22C00577C30 /* IBANTests */ = {
+		73BF9C181E33C22C00577C30 /* HHIBANTests */ = {
 			isa = PBXGroup;
 			children = (
-				73BF9C191E33C22C00577C30 /* IBANTests.swift */,
+				73BF9C191E33C22C00577C30 /* HHIBANTests.swift */,
 				73BF9C1B1E33C22C00577C30 /* Info.plist */,
 			);
-			path = IBANTests;
+			path = HHIBANTests;
 			sourceTree = "<group>";
 		};
 		73BF9C271E33CB2F00577C30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */,
-				73BF9C281E33CB2F00577C30 /* Hamcrest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,49 +116,48 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BF9C1C1E33C22C00577C30 /* IBAN.h in Headers */,
+				73BF9C1C1E33C22C00577C30 /* HHIBAN.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		73BF9C0A1E33C22C00577C30 /* IBAN */ = {
+		73BF9C0A1E33C22C00577C30 /* HHIBAN */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73BF9C1F1E33C22C00577C30 /* Build configuration list for PBXNativeTarget "IBAN" */;
+			buildConfigurationList = 73BF9C1F1E33C22C00577C30 /* Build configuration list for PBXNativeTarget "HHIBAN" */;
 			buildPhases = (
 				73BF9C061E33C22C00577C30 /* Sources */,
 				73BF9C071E33C22C00577C30 /* Frameworks */,
 				73BF9C081E33C22C00577C30 /* Headers */,
 				73BF9C091E33C22C00577C30 /* Resources */,
-				73BF9C2E1E33CB6400577C30 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = IBAN;
+			name = HHIBAN;
 			productName = IBAN;
-			productReference = 73BF9C0B1E33C22C00577C30 /* IBAN.framework */;
+			productReference = 73BF9C0B1E33C22C00577C30 /* HHIBAN.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		73BF9C131E33C22C00577C30 /* IBANTests */ = {
+		73BF9C131E33C22C00577C30 /* HHIBANTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73BF9C221E33C22C00577C30 /* Build configuration list for PBXNativeTarget "IBANTests" */;
+			buildConfigurationList = 73BF9C221E33C22C00577C30 /* Build configuration list for PBXNativeTarget "HHIBANTests" */;
 			buildPhases = (
 				73BF9C101E33C22C00577C30 /* Sources */,
 				73BF9C111E33C22C00577C30 /* Frameworks */,
 				73BF9C121E33C22C00577C30 /* Resources */,
-				73BF9C2A1E33CB3600577C30 /* CopyFiles */,
+				73C3138025B433E3001DE1A0 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				73BF9C171E33C22C00577C30 /* PBXTargetDependency */,
 			);
-			name = IBANTests;
+			name = HHIBANTests;
 			productName = IBANTests;
-			productReference = 73BF9C141E33C22C00577C30 /* IBANTests.xctest */;
+			productReference = 73BF9C141E33C22C00577C30 /* HHIBANTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,34 +167,36 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "RABE_IT Services";
 				TargetAttributes = {
 					73BF9C0A1E33C22C00577C30 = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1230;
 						ProvisioningStyle = Automatic;
 					};
 					73BF9C131E33C22C00577C30 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1230;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 73BF9C051E33C22C00577C30 /* Build configuration list for PBXProject "IBAN" */;
+			buildConfigurationList = 73BF9C051E33C22C00577C30 /* Build configuration list for PBXProject "HHIBAN" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 73BF9C011E33C22C00577C30;
 			productRefGroup = 73BF9C0C1E33C22C00577C30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				73BF9C0A1E33C22C00577C30 /* IBAN */,
-				73BF9C131E33C22C00577C30 /* IBANTests */,
+				73BF9C0A1E33C22C00577C30 /* HHIBAN */,
+				73BF9C131E33C22C00577C30 /* HHIBANTests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,12 +218,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73C3138025B433E3001DE1A0 /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ISO3166_1Alpha2.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/ISO3166_1Alpha2.frame",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which carthage >/dev/null; then\n carthage copy-frameworks\nelse\n echo \"error: carthage not installed, download from https://github.com/Carthage/Carthage\"\n exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73BF9C061E33C22C00577C30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BF9C261E33C2E100577C30 /* IBAN.swift in Sources */,
+				73BF9C261E33C2E100577C30 /* HHIBAN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BF9C1A1E33C22C00577C30 /* IBANTests.swift in Sources */,
+				73BF9C1A1E33C22C00577C30 /* HHIBANTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +264,7 @@
 /* Begin PBXTargetDependency section */
 		73BF9C171E33C22C00577C30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 73BF9C0A1E33C22C00577C30 /* IBAN */;
+			target = 73BF9C0A1E33C22C00577C30 /* HHIBAN */;
 			targetProxy = 73BF9C161E33C22C00577C30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -279,6 +273,7 @@
 		73BF9C1D1E33C22C00577C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -300,6 +295,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -325,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +337,7 @@
 		73BF9C1E1E33C22C00577C30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -362,6 +359,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -381,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -413,7 +411,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -436,46 +433,41 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		73BF9C231E33C22C00577C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = IBANTests/Info.plist;
+				INFOPLIST_FILE = HHIBANTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBANTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		73BF9C241E33C22C00577C30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = IBANTests/Info.plist;
+				INFOPLIST_FILE = HHIBANTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBANTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		73BF9C051E33C22C00577C30 /* Build configuration list for PBXProject "IBAN" */ = {
+		73BF9C051E33C22C00577C30 /* Build configuration list for PBXProject "HHIBAN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73BF9C1D1E33C22C00577C30 /* Debug */,
@@ -484,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73BF9C1F1E33C22C00577C30 /* Build configuration list for PBXNativeTarget "IBAN" */ = {
+		73BF9C1F1E33C22C00577C30 /* Build configuration list for PBXNativeTarget "HHIBAN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73BF9C201E33C22C00577C30 /* Debug */,
@@ -493,7 +485,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73BF9C221E33C22C00577C30 /* Build configuration list for PBXNativeTarget "IBANTests" */ = {
+		73BF9C221E33C22C00577C30 /* Build configuration list for PBXNativeTarget "HHIBANTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73BF9C231E33C22C00577C30 /* Debug */,

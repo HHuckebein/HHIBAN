@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HHIBAN'
-  s.version          = '0.1.1'
+  s.version          = '1.0.0'
   s.summary          = 'Create and validate IBAN.'
 
   s.description      = <<-DESC

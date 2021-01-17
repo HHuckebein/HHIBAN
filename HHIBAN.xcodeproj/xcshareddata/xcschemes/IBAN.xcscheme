@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "1230"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "73BF9C0A1E33C22C00577C30"
-               BuildableName = "IBAN.framework"
-               BlueprintName = "IBAN"
-               ReferencedContainer = "container:IBAN.xcodeproj">
+               BuildableName = "HHIBAN.framework"
+               BlueprintName = "HHIBAN"
+               ReferencedContainer = "container:HHIBAN.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,31 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "73BF9C0A1E33C22C00577C30"
+            BuildableName = "HHIBAN.framework"
+            BlueprintName = "HHIBAN"
+            ReferencedContainer = "container:HHIBAN.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "73BF9C131E33C22C00577C30"
-               BuildableName = "IBANTests.xctest"
-               BlueprintName = "IBANTests"
-               ReferencedContainer = "container:IBAN.xcodeproj">
+               BuildableName = "HHIBANTests.xctest"
+               BlueprintName = "HHIBANTests"
+               ReferencedContainer = "container:HHIBAN.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "73BF9C0A1E33C22C00577C30"
-            BuildableName = "IBAN.framework"
-            BlueprintName = "IBAN"
-            ReferencedContainer = "container:IBAN.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -66,13 +64,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "73BF9C0A1E33C22C00577C30"
-            BuildableName = "IBAN.framework"
-            BlueprintName = "IBAN"
-            ReferencedContainer = "container:IBAN.xcodeproj">
+            BuildableName = "HHIBAN.framework"
+            BlueprintName = "HHIBAN"
+            ReferencedContainer = "container:HHIBAN.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -84,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "73BF9C0A1E33C22C00577C30"
-            BuildableName = "IBAN.framework"
-            BlueprintName = "IBAN"
-            ReferencedContainer = "container:IBAN.xcodeproj">
+            BuildableName = "HHIBAN.framework"
+            BlueprintName = "HHIBAN"
+            ReferencedContainer = "container:HHIBAN.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

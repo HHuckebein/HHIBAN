@@ -25,7 +25,7 @@ import ISO3166_1Alpha2
  */
 
 public extension String {
-    public var isIBAN: Bool {
+    var isIBAN: Bool {
         do {
             return try IBAN(with: self) != nil
         } catch {

@@ -1,2 +1,1 @@
-github "nschum/SwiftHamcrest" ~> 2.0.0
-github "hhuckebein/ISO3166-1-Alpha2" ~> 0.1.0
+github "hhuckebein/ISO3166-1-Alpha2" ~> 1.0.0
