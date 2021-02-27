@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73BF9C1A1E33C22C00577C30 /* HHIBANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C191E33C22C00577C30 /* HHIBANTests.swift */; };
+		734878A125EAA5D900EB4435 /* ISO3166_1Alpha2 in Frameworks */ = {isa = PBXBuildFile; productRef = 734878A025EAA5D900EB4435 /* ISO3166_1Alpha2 */; };
+		734878A625EAA6AA00EB4435 /* HHIBANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7348788F25EA8FB400EB4435 /* HHIBANTests.swift */; };
 		73BF9C1C1E33C22C00577C30 /* HHIBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BF9C0E1E33C22C00577C30 /* HHIBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73BF9C261E33C2E100577C30 /* HHIBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C251E33C2E100577C30 /* HHIBAN.swift */; };
-		73BF9C2D1E33CB5900577C30 /* ISO3166_1Alpha2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; };
+		73BF9C261E33C2E100577C30 /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF9C251E33C2E100577C30 /* IBAN.swift */; };
 		73C3134F25B43020001DE1A0 /* HHIBAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C0B1E33C22C00577C30 /* HHIBAN.framework */; };
-		73C3135225B4302D001DE1A0 /* ISO3166_1Alpha2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +25,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7348788D25EA8FB400EB4435 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		7348788F25EA8FB400EB4435 /* HHIBANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHIBANTests.swift; sourceTree = "<group>"; };
+		7348789025EA8FB400EB4435 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		7348789425EA90BE00EB4435 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7348789525EA90BE00EB4435 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		73BF9C0B1E33C22C00577C30 /* HHIBAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HHIBAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BF9C0E1E33C22C00577C30 /* HHIBAN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHIBAN.h; sourceTree = "<group>"; };
 		73BF9C0F1E33C22C00577C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73BF9C141E33C22C00577C30 /* HHIBANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHIBANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		73BF9C191E33C22C00577C30 /* HHIBANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHIBANTests.swift; sourceTree = "<group>"; };
 		73BF9C1B1E33C22C00577C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73BF9C251E33C2E100577C30 /* HHIBAN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHIBAN.swift; sourceTree = "<group>"; };
+		73BF9C251E33C2E100577C30 /* IBAN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
 		73BF9C2C1E33CB5900577C30 /* ISO3166_1Alpha2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO3166_1Alpha2.framework; path = Carthage/Build/iOS/ISO3166_1Alpha2.framework; sourceTree = "<group>"; };
 		DC25834B20EB85280062C6D3 /* HHIBAN.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HHIBAN.podspec; sourceTree = "<group>"; };
-		DC25834C20EB85280062C6D3 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		DC25834D20EB85280062C6D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BF9C2D1E33CB5900577C30 /* ISO3166_1Alpha2.framework in Frameworks */,
+				734878A125EAA5D900EB4435 /* ISO3166_1Alpha2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,23 +55,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C3134F25B43020001DE1A0 /* HHIBAN.framework in Frameworks */,
-				73C3135225B4302D001DE1A0 /* ISO3166_1Alpha2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7348788C25EA8FB400EB4435 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				73BF9C1B1E33C22C00577C30 /* Info.plist */,
+				7348788D25EA8FB400EB4435 /* LinuxMain.swift */,
+				7348788E25EA8FB400EB4435 /* HHIBANTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7348788E25EA8FB400EB4435 /* HHIBANTests */ = {
+			isa = PBXGroup;
+			children = (
+				7348788F25EA8FB400EB4435 /* HHIBANTests.swift */,
+				7348789025EA8FB400EB4435 /* XCTestManifests.swift */,
+			);
+			path = HHIBANTests;
+			sourceTree = "<group>";
+		};
+		7348789125EA906500EB4435 /* HHIBAN */ = {
+			isa = PBXGroup;
+			children = (
+				73BF9C251E33C2E100577C30 /* IBAN.swift */,
+			);
+			path = HHIBAN;
+			sourceTree = "<group>";
+		};
 		73BF9C011E33C22C00577C30 = {
 			isa = PBXGroup;
 			children = (
-				DC25834C20EB85280062C6D3 /* Cartfile */,
+				73BF9C271E33CB2F00577C30 /* Frameworks */,
 				DC25834B20EB85280062C6D3 /* HHIBAN.podspec */,
+				7348789425EA90BE00EB4435 /* LICENSE */,
+				7348789525EA90BE00EB4435 /* Package.swift */,
+				73BF9C0C1E33C22C00577C30 /* Products */,
 				DC25834D20EB85280062C6D3 /* README.md */,
 				73BF9C0D1E33C22C00577C30 /* Sources */,
-				73BF9C181E33C22C00577C30 /* HHIBANTests */,
-				73BF9C0C1E33C22C00577C30 /* Products */,
-				73BF9C271E33CB2F00577C30 /* Frameworks */,
+				7348788C25EA8FB400EB4435 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,20 +114,11 @@
 		73BF9C0D1E33C22C00577C30 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				7348789125EA906500EB4435 /* HHIBAN */,
 				73BF9C0E1E33C22C00577C30 /* HHIBAN.h */,
 				73BF9C0F1E33C22C00577C30 /* Info.plist */,
-				73BF9C251E33C2E100577C30 /* HHIBAN.swift */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		73BF9C181E33C22C00577C30 /* HHIBANTests */ = {
-			isa = PBXGroup;
-			children = (
-				73BF9C191E33C22C00577C30 /* HHIBANTests.swift */,
-				73BF9C1B1E33C22C00577C30 /* Info.plist */,
-			);
-			path = HHIBANTests;
 			sourceTree = "<group>";
 		};
 		73BF9C271E33CB2F00577C30 /* Frameworks */ = {
@@ -137,6 +157,9 @@
 			dependencies = (
 			);
 			name = HHIBAN;
+			packageProductDependencies = (
+				734878A025EAA5D900EB4435 /* ISO3166_1Alpha2 */,
+			);
 			productName = IBAN;
 			productReference = 73BF9C0B1E33C22C00577C30 /* HHIBAN.framework */;
 			productType = "com.apple.product-type.framework";
@@ -148,7 +171,6 @@
 				73BF9C101E33C22C00577C30 /* Sources */,
 				73BF9C111E33C22C00577C30 /* Frameworks */,
 				73BF9C121E33C22C00577C30 /* Resources */,
-				73C3138025B433E3001DE1A0 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +213,9 @@
 				Base,
 			);
 			mainGroup = 73BF9C011E33C22C00577C30;
+			packageReferences = (
+				7348789F25EAA5D900EB4435 /* XCRemoteSwiftPackageReference "ISO3166-1Alpha2" */,
+			);
 			productRefGroup = 73BF9C0C1E33C22C00577C30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -218,36 +243,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		73C3138025B433E3001DE1A0 /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ISO3166_1Alpha2.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/ISO3166_1Alpha2.frame",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which carthage >/dev/null; then\n carthage copy-frameworks\nelse\n echo \"error: carthage not installed, download from https://github.com/Carthage/Carthage\"\n exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		73BF9C061E33C22C00577C30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BF9C261E33C2E100577C30 /* HHIBAN.swift in Sources */,
+				73BF9C261E33C2E100577C30 /* IBAN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BF9C1A1E33C22C00577C30 /* HHIBANTests.swift in Sources */,
+				734878A625EAA6AA00EB4435 /* HHIBANTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +383,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -400,13 +402,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -423,13 +426,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -439,12 +443,13 @@
 		73BF9C231E33C22C00577C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				INFOPLIST_FILE = HHIBANTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBANTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -453,12 +458,13 @@
 		73BF9C241E33C22C00577C30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				INFOPLIST_FILE = HHIBANTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.IBANTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -495,6 +501,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7348789F25EAA5D900EB4435 /* XCRemoteSwiftPackageReference "ISO3166-1Alpha2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HHuckebein/ISO3166-1Alpha2";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		734878A025EAA5D900EB4435 /* ISO3166_1Alpha2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7348789F25EAA5D900EB4435 /* XCRemoteSwiftPackageReference "ISO3166-1Alpha2" */;
+			productName = ISO3166_1Alpha2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 73BF9C021E33C22C00577C30 /* Project object */;
 }
