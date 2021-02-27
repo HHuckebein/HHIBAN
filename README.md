@@ -5,8 +5,7 @@ IBAN Type creates an IBAN out of string (if it is IBAN conform).
 In case of success provides information as counrty (as **ISO3166-1Alpha2**) the check sum or just the value as formatted string.
 If you just need to know wether a string contains a valid IBAN you can use the static method myString**.isIBAN**.
 
-[![Build Status](https://img.shields.io/github/workflow/status/HHuckebein/HHIBAN/Swift)](https://github.com/HHuckebein/HHIBAN/actions/workflows/swift.yml)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://img.shields.io/github/workflow/status/HHuckebein/HHIBAN/Swift)](https://github.com/HHuckebein/IBAN/actions/workflows/swift.yml)
 ![CocoaPods](https://img.shields.io/cocoapods/v/HHIBAN.svg)
 [![codecov](https://codecov.io/gh/HHuckebein/IBAN/branch/master/graph/badge.svg)](https://codecov.io/gh/HHuckebein/IBAN)
 
