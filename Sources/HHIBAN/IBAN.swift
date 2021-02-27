@@ -47,8 +47,8 @@ public struct IBAN {
         static let lengthDE    = 22
         static let lengthCH_LI = 21
         static let lengthINT   = 34
-        static let countryCodeRange = Range(0..<2)
-        static let checkSumRange = Range(2..<4)
+        static let countryCodeRange = 0..<2
+        static let checkSumRange = 2..<4
     }
     
     fileprivate static var checkSum = 0

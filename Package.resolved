@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ISO3166_1Alpha2",
+        "repositoryURL": "https://github.com/HHuckebein/ISO3166-1Alpha2",
+        "state": {
+          "branch": null,
+          "revision": "9ca693d71e7c8a3a23c6b6fb928d926ebe9e5c91",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
