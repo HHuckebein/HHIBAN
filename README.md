@@ -5,7 +5,7 @@ IBAN Type creates an IBAN out of string (if it is IBAN conform).
 In case of success provides information as counrty (as **ISO3166-1Alpha2**) the check sum or just the value as formatted string.
 If you just need to know wether a string contains a valid IBAN you can use the static method myString**.isIBAN**.
 
-[![Build Status](https://img.shields.io/github/workflow/status/HHuckebein/HHIBAN/Swift)](https://github.com/HHuckebein/IBAN/actions/workflows/swift.yml)
+[![Swift](https://github.com/HHuckebein/IBAN/actions/workflows/swift.yml/badge.svg)](https://github.com/HHuckebein/IBAN/actions/workflows/swift.yml)
 ![CocoaPods](https://img.shields.io/cocoapods/v/HHIBAN.svg)
 [![codecov](https://codecov.io/gh/HHuckebein/IBAN/branch/master/graph/badge.svg)](https://codecov.io/gh/HHuckebein/IBAN)
 
@@ -20,24 +20,17 @@ try IBAN(with: "CH10002300A1023502601")
 
 ## Installation
 
-### Installation with Carthage
+### Swift Package Manager
 
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
 
-You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+Once you have your Swift package set up, add HHIBAN as a dependency by adding it to the `dependencies` value of your `Package.swift`.
 
-```bash
-$ brew update
-$ brew install carthage
+```swift
+dependencies: [
+    .package(url: "https://github.com/HHuckebein/IBAN", .upToNextMajor(from: "1.0.1"))
+]
 ```
-
-To integrate IBAN into your Xcode project using Carthage, specify it in your `Cartfile`:
-
-```ogdl
-github "HHuckebein/IBAN"
-```
-
-Run `carthage` to build the framework and drag the built `IBAN.framework` into your Xcode project.
 
 ### Installation with CocoaPods
 
